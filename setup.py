@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="puller",  # Replace with your own username
-    version="0.4.0",
-    author="Tim Dithmer",
-    author_email="dith.tim@gmail.com",
+    name="ams_puller",  # Replace with your own username
+    version="0.5.0",
+    author="adesso mobile solutions GmbH",
+    author_email="it-operations@adesso-mobile.de",
     description="An automatic repo puller",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/dithmer/puller",
+    url="https://github.com/adesso-mobile/puller",
     project_urls={
-        "Bug Tracker": "https://github.com/dithmer/puller/issues",
+        "Bug Tracker": "https://github.com/adesso-mobile/puller",
     },
     classifiers=[
         "Programming Language :: Python :: 3",

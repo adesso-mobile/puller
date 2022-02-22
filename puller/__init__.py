@@ -35,6 +35,16 @@ def command_preparation(command, user):
 async def pull(request: Request, repo: str):
     c = get_config()
 
+
+    #X-Event-Key: diagnostics:ping
+    try:
+        event_key = request.headers["X-Event-Key"]
+        if event_key == 'diagnostics:ping':
+            return "ok"
+    except KeyError:
+        pass
+
+
     try:
         repo_config = c[repo]
     except KeyError:
